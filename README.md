@@ -24,15 +24,16 @@
 <br>
 <br>
 
-<!-- Card: edit LEFT and RIGHT in scripts/make_info_card.py, then run it -->
+<h3><code>priyanshu@github ~ $ ./links.sh</code></h3>
 
-<h3><code>priyanshu@github ~ $ ./about.sh</code></h3>
+<p><b>Website Designer · Web Developer</b></p>
 
-<img src="./info-card.svg" width="860" alt="Priyanshu Roy: Website Designer and Web Developer. Building Touchpoint, Tably, Kinetiq, Splintr and Lexio. Stack: TypeScript, Next.js, React, Python, FastAPI, LangChain, PostgreSQL. Smart Bengal Hackathon Finalist 2025, Edunet x IBM Internship." />
+[![Portfolio](https://img.shields.io/badge/Portfolio-priyanshuroy.com-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.priyanshuroy.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-priyanshuroy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/priyanshuroy/)
+[![Instagram](https://img.shields.io/badge/Instagram-priyanshu.stuff-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/priyanshu.stuff/)
+[![X](https://img.shields.io/badge/X-RoyPriyans53485-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/RoyPriyans53485)
+[![Kinetiq](https://img.shields.io/badge/Kinetiq-live%20app-26a641?style=for-the-badge&logoColor=white)](https://kinetiq.runs-on.dev)
 
 <br>
-<br>
-
-<a href="https://www.priyanshuroy.com/">priyanshuroy.com</a> · <a href="https://kinetiq.runs-on.dev">Kinetiq</a>
 
 </div>
