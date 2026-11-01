@@ -1,0 +1,5 @@
+# Local only: needed when the portrait photo changes, never by the daily workflow.
+pillow
+numpy
+opencv-python-headless
+rembg[cpu]

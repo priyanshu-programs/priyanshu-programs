@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+
+# The raw photo stays local. Only the ASCII SVG is published.
+head.png
+source-photo.*
+source-prepped.png
+source-mask.png
+preview/
