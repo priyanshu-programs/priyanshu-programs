@@ -50,19 +50,24 @@ def fetch():
 
 
 def streaks(days):
-    longest = run = 0
-    for day in days:
+    """Return (current, longest) as (length, [start, end] or None). Ties keep the latest run."""
+    longest, longest_span = 0, None
+    run = 0
+    for i, day in enumerate(days):
         run = run + 1 if day["count"] else 0
-        longest = max(longest, run)
+        if run and run >= longest:
+            longest, longest_span = run, [days[i - run + 1]["date"], day["date"]]
 
-    current = 0
+    current, start = 0, None
     # Today isn't over yet, so an empty today doesn't break the streak.
     tail = days[:-1] if days[-1]["count"] == 0 else days
     for day in reversed(tail):
         if not day["count"]:
             break
         current += 1
-    return current, longest
+        start = day["date"]
+    current_span = [start, tail[-1]["date"]] if current else None
+    return (current, current_span), (longest, longest_span)
 
 
 def main():
@@ -71,7 +76,7 @@ def main():
     if reported is not None and reported != total:
         sys.exit(f"scraped total {total} does not match GitHub's reported {reported}")
 
-    current, longest = streaks(days)
+    (current, current_span), (longest, longest_span) = streaks(days)
     best = max(days, key=lambda d: d["count"])
     monthly = collections.Counter()
     for day in days:
@@ -84,7 +89,10 @@ def main():
                 "username": USERNAME,
                 "total": total,
                 "current_streak": current,
+                "current_span": current_span,
                 "longest_streak": longest,
+                "longest_span": longest_span,
+                "active_days": sum(1 for d in days if d["count"]),
                 "best_day": {"date": best["date"], "count": best["count"]},
                 "monthly": dict(sorted(monthly.items())),
                 "days": days,
