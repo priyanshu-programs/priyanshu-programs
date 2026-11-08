@@ -1,17 +1,17 @@
 {
  "username": "priyanshu-programs",
- "total": 327,
- "current_streak": 12,
+ "total": 330,
+ "current_streak": 13,
  "current_span": [
   "2026-10-27",
-  "2026-11-07"
+  "2026-11-08"
  ],
- "longest_streak": 12,
+ "longest_streak": 13,
  "longest_span": [
   "2026-10-27",
-  "2026-11-07"
+  "2026-11-08"
  ],
- "active_days": 60,
+ "active_days": 61,
  "best_day": {
   "date": "2026-11-01",
   "count": 25
@@ -29,44 +29,9 @@
   "2026-08": 52,
   "2026-09": 39,
   "2026-10": 60,
-  "2026-11": 81
+  "2026-11": 84
  },
  "days": [
-  {
-   "date": "2025-11-02",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-03",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-04",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-05",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-06",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-07",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-08",
-   "count": 0,
-   "level": 0
-  },
   {
    "date": "2025-11-09",
    "count": 0,
@@ -1884,8 +1849,13 @@
   },
   {
    "date": "2026-11-07",
-   "count": 9,
+   "count": 8,
    "level": 2
+  },
+  {
+   "date": "2026-11-08",
+   "count": 4,
+   "level": 1
   }
  ]
 }
